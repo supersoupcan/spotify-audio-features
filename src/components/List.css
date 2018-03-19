@@ -1,0 +1,42 @@
+.list{
+  margin : 10px;
+  padding : 10px;
+}
+
+.flexContainer{
+  display : flex;
+  justify-content: space-between;
+}
+
+.flexContainerLabel{
+  composes : flexContainer;
+  border-bottom : 1px solid black;
+}
+
+.col{
+  padding : 2.5px;
+}
+
+.track{
+  composes : col;
+  flex : 5;
+  text-align : left;
+}
+
+.feature{
+  composes : col;
+  flex : 2;
+  text-align : right;
+}
+
+.trackLabel{
+  composes : track;
+  font-size : 20px;
+}
+
+.featureLabel{
+  composes : feature;
+  font-size : 15px;
+}
+
+
